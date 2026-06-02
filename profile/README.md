@@ -78,10 +78,10 @@ AI enablement without production access
 
 ### Community
 
-Website: https://burnsideproject.ai
-GitHub: https://github.com/burnside-project
-Substack: https://burnsideproject.substack.com
-LinkedIn: https://www.linkedin.com/company/burnside-project
+* Website: https://burnsideproject.ai
+* GitHub: https://github.com/burnside-project
+* Substack: https://burnsideproject.substack.com
+* LinkedIn: https://www.linkedin.com/company/burnside-project
 
 ---
 
