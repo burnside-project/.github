@@ -38,9 +38,7 @@ Secure data exchange subscriber. Publishers push data over mTLS; wire-drop recei
 
 Publish governed data products as **dial-able tiny-URL MCP endpoints** — paste the URL into Claude or ChatGPT Enterprise and start a governed, audited conversation with your data.
 
-> Like publishing a phone number for your data: you publish a "number" (a tiny URL); users **dial in** from their AI client and converse.
-
-⸻
+---
 ### pg-collector
 pg-collector is a lightweight edge compute agent that extracts PostgreSQL telemetry, processes it locally through a DuckDB analytical warehouse, and delivers Parquet files to our cloud platform where AI analyzes patterns and predicts issues before they impact your users.
 
@@ -48,12 +46,14 @@ Single binary. Zero runtime dependencies. YAML config. Runs anywhere — systemd
 
 https://github.com/burnside-project/pg-collector
 
+---
 ### Why We Exist
 
-Modern analytics stacks have become expensive, complex, and difficult to govern.
+> Modern analytics stacks have become expensive, complex, and difficult to govern.
 
 Organizations spend hundreds of thousands of dollars per year on data warehouses, ETL pipelines, governance tools, and AI integrations.
 
+--- 
 ### Burnside Project provides a simpler alternative:
 
 * Open formats
@@ -63,7 +63,7 @@ Organizations spend hundreds of thousands of dollars per year on data warehouses
 * AI-ready governance
 * No vendor lock-in
 
-⸻
+---
 
 ### Principles
 
@@ -74,7 +74,7 @@ Local development experience
 Cloud optional
 AI enablement without production access
 
-⸻
+---
 
 ### Community
 
@@ -83,7 +83,7 @@ GitHub: https://github.com/burnside-project
 Substack: https://burnsideproject.substack.com
 LinkedIn: https://www.linkedin.com/company/burnside-project
 
-⸻
+---
 
 ### Current Focus
 
