@@ -9,13 +9,17 @@ Open infrastructure for governed analytics, PostgreSQL intelligence, and AI-read
 
 We believe organizations should own their data, govern AI access, and build analytics without warehouse lock-in.
 
-### Products
+## Projects
+
+---
 
 ### pg-cdc
 
 The security boundary between production PostgreSQL databases and AI agents.
 
 Streams WAL changes into typed, compacted Parquet files in cloud storage. Creates a physical air gap — agents and developers query governed, immutable data without ever touching production. Pure Go. No CGO. Single binary.
+
+https://github.com/burnside-project/pg-cdc
 
 #### Architecture
 
@@ -38,9 +42,12 @@ Streams WAL changes into typed, compacted Parquet files in cloud storage. Create
 - **Governed by default** — Lake Formation tags gate every read; untagged data is invisible
 - **Time travel built in** — CDC epochs provide historical queries without database branching
 
+---
 ### pg-warehouse
 
 The data platform is built from 5 independent projects across 4 layers. Each layer has a clear responsibility and communicates via Iceberg tables in a shared Glue catalog.
+
+https://github.com/burnside-project/pg-warehouse
 
 #### Architecture
 ```
@@ -120,7 +127,9 @@ Each analyst's observation is positional — timestamped and LSN-tagged. Like tw
 
 The contract defines what deviations require action (e.g., `z_score > 3`). The contract is the referee. CI is the scorekeeper. Analysts are the commentators.
 
-### wire-drop
+---
+### wire-drop (in private beta)
+
 
 Secure data exchange subscriber. Publishers push data over mTLS; wire-drop receives, deduplicates, writes Iceberg tables, and enforces tag-based governance.
 
@@ -175,7 +184,8 @@ wire-drop uses hexagonal architecture (ports & adapters):
 - Governance: DynamoDB + Lake Formation
 - Telemetry: Prometheus + slog JSON
 
-### ai-dial-pad
+---
+### ai-dial-pad(in Private Beta)
 
 Publish governed data products as **dial-able tiny-URL MCP endpoints** — paste the URL into Claude or ChatGPT Enterprise and start a governed, audited conversation with your data.
 
@@ -192,6 +202,8 @@ ai-dial-pad turns **governed data products on an AWS S3 lake** — Glue Data Cat
 pg-collector is a lightweight edge compute agent that extracts PostgreSQL telemetry, processes it locally through a DuckDB analytical warehouse, and delivers Parquet files to our cloud platform where AI analyzes patterns and predicts issues before they impact your users.
 
 Single binary. Zero runtime dependencies. YAML config. Runs anywhere — systemd, Docker, Kubernetes, bare metal.
+
+https://github.com/burnside-project/pg-collector
 
 **Business Model:** Community Freeware. Demo tier is free for local testing; commercial tiers (Starter/Pro/Business/Enterprise) require a paid subscription via Key Service activation.
 
