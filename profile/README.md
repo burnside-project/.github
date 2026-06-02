@@ -15,9 +15,7 @@ We believe organizations should own their data, govern AI access, and build anal
 
 ### pg-cdc
 
-The security boundary between production PostgreSQL databases and AI agents.
-
-Streams WAL changes into typed, compacted Parquet files in cloud storage. Creates a physical air gap — agents and developers query governed, immutable data without ever touching production. Pure Go. No CGO. Single binary.
+A single-binary PostgreSQL change-data-capture daemon that streams WAL into typed Parquet files on cloud storage. Pure Go, no CGO, no Kafka, no JVM. Produces an immutable, governed data zone that downstream consumers (Athena, Spark, Iceberg-aware engines, AI agents via the MCP server) read from without ever touching the source database
 
 https://github.com/burnside-project/pg-cdc
 
@@ -67,12 +65,12 @@ Organizations spend hundreds of thousands of dollars per year on data warehouses
 
 ### Principles
 
-Security by design
-Governance first
-Open standards
-Local development experience
-Cloud optional
-AI enablement without production access
+* Security by design
+* Governance first
+* Open standards
+* Local development experience
+* Multi Cloud
+* AI enablement without production access
 
 ---
 
