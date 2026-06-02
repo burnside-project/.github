@@ -120,7 +120,7 @@ Each analyst's observation is positional — timestamped and LSN-tagged. Like tw
 
 The contract defines what deviations require action (e.g., `z_score > 3`). The contract is the referee. CI is the scorekeeper. Analysts are the commentators.
 
-#### wire-drop
+### wire-drop
 
 Secure data exchange subscriber. Publishers push data over mTLS; wire-drop receives, deduplicates, writes Iceberg tables, and enforces tag-based governance.
 
@@ -175,7 +175,7 @@ wire-drop uses hexagonal architecture (ports & adapters):
 - Governance: DynamoDB + Lake Formation
 - Telemetry: Prometheus + slog JSON
 
-#### ai-dial-pad
+### ai-dial-pad
 
 Publish governed data products as **dial-able tiny-URL MCP endpoints** — paste the URL into Claude or ChatGPT Enterprise and start a governed, audited conversation with your data.
 
@@ -183,7 +183,7 @@ Publish governed data products as **dial-able tiny-URL MCP endpoints** — paste
 >
 > `https://dial.burnside.ai/p/acme-orders` → pasted into a chatbox → connected → *"Is product X in stock?"* → answered from the governed lake.
 
-## What it is
+#### What it is
 
 ai-dial-pad turns **governed data products on an AWS S3 lake** — Glue Data Catalog + Lake Formation tags + S3 Parquet, e.g. the data landed — into publishable, conversational MCP endpoints. It's **producer-agnostic**: the contract is the governed lake, not any one writer, so it works on any LF-governed, Glue-cataloged S3 data.
 
@@ -246,13 +246,13 @@ Ring Buffer ──Flush Loop (5s)──► SQLite WAL (durable)
 
 
 
-#### Why We Exist
+### Why We Exist
 
 Modern analytics stacks have become expensive, complex, and difficult to govern.
 
 Organizations spend hundreds of thousands of dollars per year on data warehouses, ETL pipelines, governance tools, and AI integrations.
 
-#### Burnside Project provides a simpler alternative:
+### Burnside Project provides a simpler alternative:
 
 * Open formats
 * Local-first analytics
@@ -263,7 +263,7 @@ Organizations spend hundreds of thousands of dollars per year on data warehouses
 
 ⸻
 
-#### Principles
+### Principles
 
 Security by design
 Governance first
@@ -274,7 +274,7 @@ AI enablement without production access
 
 ⸻
 
-#### Community
+### Community
 
 Website: https://burnsideproject.ai
 GitHub: https://github.com/burnside-project
@@ -283,6 +283,6 @@ LinkedIn: https://www.linkedin.com/company/burnside-project
 
 ⸻
 
-#### Current Focus
+### Current Focus
 
 Building the open infrastructure stack for governed AI and PostgreSQL intelligence.
