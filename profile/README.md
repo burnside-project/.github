@@ -83,7 +83,7 @@ https://github.com/burnside-project/pg-warehouse
 
 #### Layer 1: RAW (pg-cdc)
 
-**Repo:** [burnside-project-pg-cdc](https://github.com/dataalgebra-engineering/burnside-project-pg-cdc)
+**Repo:** [burnside-project-pg-cdc](https://github.com/burnside-project/pg-cdc)
 **Status:** Production — Phases 1–6 complete, Iceberg shipping
 
 Streams PostgreSQL WAL changes into Iceberg tables via the Glue catalog. Zero-gap replication using logical replication slots. Governed via Lake Formation tag-based access.
@@ -92,12 +92,12 @@ Streams PostgreSQL WAL changes into Iceberg tables via the Glue catalog. Zero-ga
 
 #### Layer 2: CURATED (pg-warehouse)
 
-**Repo:** [burnside-project-pg-warehouse](https://github.com/dataalgebra-engineering/burnside-project-pg-warehouse)
+**Repo:** [burnside-project-pg-warehouse](https://github.com/burnside-project/pg-warehouse)
 **Status:** Refresh working, publish planned
 
 Pulls raw Iceberg → local DuckDB → transforms via SQL models → validates against contracts → publishes curated data products back to Iceberg in a gold database.
 
-**Glue database:** `soak_test_gold` (curated, governed, contracted)
+**Glue database:** `GLUE_DATABASE` (curated, governed, contracted)
 
 #### Continuous curation
 
