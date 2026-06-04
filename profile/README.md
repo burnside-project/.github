@@ -1,7 +1,7 @@
 ## Burnside Project
 
 <p align="center">
-  <img src="home.png" alt="Burnside Project">
+  <img src="home1.png" alt="Burnside Project">
 </p>
 
 
