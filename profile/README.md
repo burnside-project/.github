@@ -1,14 +1,12 @@
 ## Burnside Project
 
 <p align="center">
-  <img src="home1.png" alt="Burnside Project">
+  <img src="home.png" alt="Burnside Project">
 </p>
+Open infrastructure for turning operational data into AI-ready business context. We help organizations capture operational activity, govern business knowledge, and publish trusted context that AI agents can safely understand and use. Built on open standards, open formats, and your cloud account — without warehouse lock-in or direct AI access to production databases.
+<br>
 
-
-Open infrastructure for governed analytics, PostgreSQL intelligence, and AI-ready data products.
-We believe organizations should own their data, govern AI access, and build analytics without warehouse lock-in.
-
-## Projects
+## Our Projects -For turning operational data into AI-ready business context.
 
 ---
 
