@@ -3,10 +3,116 @@
 <p align="center">
   <img src="home.png" alt="Burnside Project">
 </p>
-Open infrastructure for turning operational data into AI-ready business context. We help organizations capture operational activity, govern business knowledge, and publish trusted context that AI agents can safely understand and use. Built on open standards, open formats, and your cloud account — without warehouse lock-in or direct AI access to production databases.
-<br>
 
-## Our Projects -For turning operational data into AI-ready business context.
+
+Open infrastructure for turning operational data into AI-ready business context.
+
+> Most AI agents can read documents.
+
+> Very few can understand how your business actually works.
+
+> Burnside helps organizations capture operational activity from production systems, govern it as trusted business context, and safely expose it to AI agents.
+
+## What Can You Build?
+
+### Customer Support Agents
+
+Customer: "Where is my order?"
+
+Instead of searching multiple systems, an AI agent can access governed order history, shipment status, inventory, and support interactions.
+
+Powered by:
+- pg-cdc
+- Business Context Models
+- ai-dial-pad
+
+---
+
+### Customer Success Copilots
+
+"What customers are at risk of churn?"
+
+An AI agent can combine subscription activity, support tickets, usage trends, and account history to help customer success teams prioritize outreach.
+
+Powered by:
+- pg-cdc
+- first-table
+- ai-dial-pad
+
+---
+
+### Sales Assistants
+
+"Which opportunities are most likely to close this quarter?"
+
+AI agents can reason over operational data, customer activity, product adoption, and account history without direct production database access.
+
+Powered by:
+- pg-cdc
+- first-table
+
+---
+
+### Operations Copilots
+
+"What changed yesterday?"
+
+AI agents can monitor operational activity, inventory movement, order delays, and fulfillment bottlenecks across the business.
+
+Powered by:
+- pg-cdc
+- ai-dial-pad
+
+---
+
+### Executive Intelligence Agents
+
+"Give me a morning briefing."
+
+AI agents summarize business performance using governed operational context rather than manually assembled reports.
+
+Powered by:
+- Business Context Models
+- Operational Context Publishing
+
+---
+
+## Projects
+
+### pg-cdc
+
+Capture operational activity from PostgreSQL and publish governed, immutable data products.
+
+### first-table
+
+Transform operational data into business entities, semantic models, and AI-ready context.
+
+### wire-drop
+
+Securely exchange governed business context across teams, partners, and organizations.
+
+### ai-dial-pad
+
+Publish business context as AI-ready endpoints for ChatGPT, Claude, and enterprise agents.
+
+---
+
+## Architecture
+
+Production Systems
+→ Capture
+→ Govern
+→ Model
+→ Publish
+→ AI Agents
+
+No direct AI access to production databases.
+
+Just trusted business context.
+
+Build Locally. Scale Intentionally.
+
+## Our Projects - For turning operational data into AI-ready business context.
 
 ---
 
