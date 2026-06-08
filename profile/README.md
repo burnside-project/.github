@@ -77,44 +77,7 @@ Powered by:
 
 ---
 
-## Projects
-
-### pg-cdc
-
-Capture operational activity from PostgreSQL and publish governed, immutable data products.
-
-### first-table
-
-Transform operational data into business entities, semantic models, and AI-ready context.
-
-### wire-drop
-
-Securely exchange governed business context across teams, partners, and organizations.
-
-### ai-dial-pad
-
-Publish business context as AI-ready endpoints for ChatGPT, Claude, and enterprise agents.
-
----
-
-## Architecture
-
-Production Systems
-→ Capture
-→ Govern
-→ Model
-→ Publish
-→ AI Agents
-
-No direct AI access to production databases.
-
-Just trusted business context.
-
-Build Locally. Scale Intentionally.
-
-## Our Projects - For turning operational data into AI-ready business context.
-
----
+## Our Projects - For turning operational data into AI-ready business context
 
 ### pg-cdc
 
@@ -123,6 +86,7 @@ A single-binary PostgreSQL change-data-capture daemon that streams WAL into type
 https://github.com/burnside-project/pg-cdc
 
 ---
+
 ### pg-warehouse
 
 The data platform is built from 5 independent projects across 4 layers. Each layer has a clear responsibility and communicates via Iceberg tables in a shared Glue catalog.
@@ -146,6 +110,23 @@ pg-collector is a lightweight edge compute agent that extracts PostgreSQL teleme
 Single binary. Zero runtime dependencies. YAML config. Runs anywhere — systemd, Docker, Kubernetes, bare metal.
 
 https://github.com/burnside-project/pg-collector
+
+---
+
+## Architecture
+
+Production Systems
+→ Capture
+→ Govern
+→ Model
+→ Publish
+→ AI Agents
+
+No direct AI access to production databases.
+
+Just trusted business context.
+
+Build Locally. Scale Intentionally.
 
 ---
 ### Why We Exist
