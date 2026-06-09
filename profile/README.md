@@ -1,17 +1,24 @@
-## Burnside Project
+## Burnside Project - Building the Operational Context Ecosystem for AI Agents
 
 <p align="center">
   <img src="home.png" alt="Burnside Project">
 </p>
 
+Most organizations have already invested heavily in operational systems, databases, SaaS platforms, APIs, and analytics infrastructure. As AI agents become part of daily workflows, a new challenge emerges:
 
-Open infrastructure for turning operational data into AI-ready business context.
+#### How do AI agents safely access trusted business context without direct access to production systems?
 
-> Most AI agents can read documents.
+Today’s AI ecosystem has no equivalent of a website, email address, or phone number for operational business context. Every organization is rebuilding custom integrations, permissions, and data access patterns for every new AI application.
 
-> Very few can understand how your business actually works.
+We believe AI agents need governed operational context—not database credentials.
 
-> Burnside helps organizations capture operational activity from production systems, govern it as trusted business context, and safely expose it to AI agents.
+Burnside Project is building an open ecosystem that helps organizations:
+
+* Capture operational reality from production systems
+* Govern access through policy, identity, and data classification
+* Model business entities, relationships, and operational context
+* Publish trusted context through secure AI endpoints
+* Enable AI agents to safely access business information
 
 ## What Can You Build?
 
