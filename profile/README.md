@@ -20,7 +20,7 @@ Burnside Project is building an open ecosystem that helps organizations:
 * Publish trusted context through secure AI endpoints
 * Enable AI agents to safely access business information
 
-## What Can You Build?
+## What AI Applications and Agents Can You Build?
 
 ### Customer Support Agents
 
@@ -57,6 +57,7 @@ AI agents can reason over operational data, customer activity, product adoption,
 Powered by:
 - pg-cdc
 - first-table
+- ai-dial-pad
 
 ---
 
@@ -93,6 +94,13 @@ A single-binary PostgreSQL change-data-capture daemon that streams WAL into type
 https://github.com/burnside-project/pg-cdc
 
 ---
+### ai-dial-pad(in Private Beta)
+
+Publish governed data products as **dial-able tiny-URL MCP endpoints** — paste the URL into Claude or ChatGPT Enterprise and start a governed, audited conversation with your data.
+
+https://github.com/burnside-project/burnside-project-ai-dial-pad
+
+---
 
 ### pg-warehouse
 
@@ -106,13 +114,7 @@ https://github.com/burnside-project/pg-warehouse
 Secure data exchange subscriber. Publishers push data over mTLS; wire-drop receives, deduplicates, writes Iceberg tables, and enforces tag-based governance.
 
 ---
-### ai-dial-pad(in Private Beta)
 
-Publish governed data products as **dial-able tiny-URL MCP endpoints** — paste the URL into Claude or ChatGPT Enterprise and start a governed, audited conversation with your data.
-
-https://github.com/burnside-project/burnside-project-ai-dial-pad
-
----
 ### pg-collector
 pg-collector is a lightweight edge compute agent that extracts PostgreSQL telemetry, processes it locally through a DuckDB analytical warehouse, and delivers Parquet files to our cloud platform where AI analyzes patterns and predicts issues before they impact your users.
 
